@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV Publico | Omar Daniel Cabrera Amador</title>
-    <meta name="description" content="CV publico sanitizado de Omar Daniel Cabrera Amador, especialista en TI e infraestructura, servidores, virtualizacion, respaldos, monitoreo y continuidad operativa.">
+    <meta name="description" content="CV publico sanitizado de Omar Daniel Cabrera Amador, especialista en TI e infraestructura: servidores fisicos y virtuales, VMware, Proxmox, Linux, Windows Server, bases de datos, monitoreo, respaldos y continuidad operativa.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://ocabrerafinanzas.github.io/cv.html">
     <meta property="og:type" content="profile">
@@ -143,6 +143,12 @@
         gap: 18px;
       }
 
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+
       .items {
         display: grid;
         gap: 18px;
@@ -156,6 +162,24 @@
       article:last-child {
         padding-bottom: 0;
         border-bottom: 0;
+      }
+
+      .card {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fbfaf7;
+      }
+
+      .card h3 {
+        color: var(--ink);
+      }
+
+      .stack-list {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding-left: 20px;
       }
 
       .tags {
@@ -206,7 +230,8 @@
 
       @media (max-width: 720px) {
         .topbar,
-        .grid {
+        .grid,
+        .grid-3 {
           grid-template-columns: 1fr;
         }
 
@@ -233,9 +258,10 @@
         <h1>Omar Daniel Cabrera Amador</h1>
         <p class="headline">Especialista en TI e infraestructura | Servidores, virtualizacion y continuidad operativa</p>
         <p class="summary">
-          Profesional enfocado en administracion de infraestructura tecnologica, servidores fisicos y virtuales,
-          virtualizacion, respaldos, monitoreo, alta disponibilidad, documentacion tecnica y continuidad operativa.
-          Actualmente colaboro en PEMEX dentro del area de TI e infraestructura de la Gerencia de Sistemas Digitales.
+          Profesional de TI enfocado en infraestructura tecnologica, administracion de servidores fisicos y virtuales,
+          virtualizacion, plataformas web, bases de datos, repositorios, monitoreo, respaldos, alta disponibilidad,
+          documentacion tecnica y continuidad operativa. Actualmente colaboro en PEMEX dentro del area de TI e
+          infraestructura de la Gerencia de Sistemas Digitales.
         </p>
         <div class="links" aria-label="Perfiles profesionales">
           <a href="https://www.linkedin.com/in/omar-daniel-cabrera-amador/" rel="me">LinkedIn</a>
@@ -249,8 +275,29 @@
         <h2>Resumen profesional</h2>
         <p>
           Mi enfoque esta en mantener plataformas estables, documentadas y medibles. Aporto orden operativo,
-          seguimiento tecnico y criterio de continuidad para servicios que dependen de infraestructura confiable.
+          seguimiento tecnico y criterio de continuidad para servicios que dependen de infraestructura confiable,
+          con experiencia en ambientes virtuales, redundancia, respaldos, balanceo de carga y administracion de
+          servicios criticos.
         </p>
+      </section>
+
+      <section>
+        <p class="label">Propuesta de valor</p>
+        <h2>Infraestructura con continuidad, control y trazabilidad</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Disponibilidad</h3>
+            <p>Operacion de ambientes virtualizados con enfoque en alta disponibilidad, redundancia y continuidad de servicios.</p>
+          </article>
+          <article class="card">
+            <h3>Administracion tecnica</h3>
+            <p>Instalacion, configuracion y seguimiento de servidores, hipervisores, servicios web, repositorios y bases de datos.</p>
+          </article>
+          <article class="card">
+            <h3>Gobierno operativo</h3>
+            <p>Documentacion, monitoreo, respaldo, seguimiento de incidencias y colaboracion con multiples areas.</p>
+          </article>
+        </div>
       </section>
 
       <section>
@@ -260,11 +307,53 @@
           <article>
             <h3>PEMEX - Gerencia de Sistemas Digitales</h3>
             <p><strong>Especialista en TI e infraestructura</strong> | 2026 - Actual</p>
-            <p>Soporte a actividades de infraestructura tecnologica, documentacion, seguimiento operativo y continuidad de servicios.</p>
+            <p>
+              Seguimiento a actividades de infraestructura tecnologica, documentacion, continuidad de servicios y
+              soporte operativo para plataformas de TI.
+            </p>
           </article>
           <article>
-            <h3>Infraestructura y servidores</h3>
-            <p>Experiencia previa en administracion de servidores fisicos y virtuales, virtualizacion, servicios web, bases de datos, repositorios, balanceadores, servicios Microsoft, respaldos y monitoreo.</p>
+            <h3>Secretaria de Administracion y Finanzas de la Ciudad de Mexico - Subdireccion de Servidores</h3>
+            <p><strong>Infraestructura, servidores y virtualizacion</strong> | 2019 - 2023</p>
+            <ul class="stack-list">
+              <li>Administracion de servidores fisicos y virtuales.</li>
+              <li>Virtualizacion de servidores fisicos hacia ambientes virtuales.</li>
+              <li>Instalacion y configuracion de hipervisores VMware y Proxmox.</li>
+              <li>Administracion de vCenter con arquitectura de hiperconvergencia, 25 nodos y vSAN.</li>
+              <li>Implementacion de respaldos para maquinas virtuales en repositorios y cintas magneticas.</li>
+              <li>Herramientas de monitoreo para control operativo de servidores.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <p class="label">Experiencia tecnica</p>
+        <h2>Plataformas administradas</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Servicios web</h3>
+            <p>Linux y Windows con Apache, nginx, PHP, Composer, Laravel, Tomcat e IIS.</p>
+          </article>
+          <article class="card">
+            <h3>Bases de datos</h3>
+            <p>Instalacion, configuracion y puesta a punto de Oracle, MySQL, PostgreSQL y MongoDB.</p>
+          </article>
+          <article class="card">
+            <h3>Repositorios y archivos</h3>
+            <p>Servicios SMB, Samba y NFS para almacenamiento y colaboracion operativa.</p>
+          </article>
+          <article class="card">
+            <h3>Microsoft y VDI</h3>
+            <p>Active Directory, Print Server, Storage Server, WSUS y VDI Windows en arquitectura VMware.</p>
+          </article>
+          <article class="card">
+            <h3>Balanceo y seguridad</h3>
+            <p>Balanceadores de carga, optimizacion de flujo, arquitectura de servicios y certificados SSL.</p>
+          </article>
+          <article class="card">
+            <h3>Nube</h3>
+            <p>Administracion de instancias en AWS y servidores en Oracle Cloud.</p>
           </article>
         </div>
       </section>
@@ -283,6 +372,20 @@
           <li>Alta disponibilidad</li>
           <li>Continuidad operativa</li>
           <li>Documentacion tecnica</li>
+          <li>vCenter</li>
+          <li>vSAN</li>
+          <li>Apache</li>
+          <li>nginx</li>
+          <li>IIS</li>
+          <li>Oracle</li>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>MongoDB</li>
+          <li>Active Directory</li>
+          <li>WSUS</li>
+          <li>AWS</li>
+          <li>Oracle Cloud</li>
+          <li>SSL</li>
         </ul>
       </section>
 
@@ -309,8 +412,15 @@
         <p class="label">Cursos y capacidades</p>
         <h2>Complementos</h2>
         <div class="grid">
-          <p>SCRUM, bases de datos, mantenimiento preventivo, Office 365, metodologia de ensenanza y liderazgo.</p>
-          <p>Idioma ingles B1. Enfoque en responsabilidad, adaptabilidad, colaboracion, comunicacion asertiva y toma de decisiones.</p>
+          <p>
+            Programa para lideres Governors, The Washington Center, Exadata Database Machine 12c Administration
+            Workshop, principios de metodologia SCRUM, metodologia de la ensenanza, mantenimiento preventivo,
+            Office 365 y tecnico en informatica.
+          </p>
+          <p>
+            Ingles B1. Fortalezas profesionales: responsabilidad, adaptabilidad, colaboracion, liderazgo,
+            comunicacion asertiva, toma de decisiones, creatividad y enfoque a resultados.
+          </p>
         </div>
       </section>
 
